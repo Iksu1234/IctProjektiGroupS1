@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.navbar {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #333;
+  list-style-type: none;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+.navbar-weather-temperature {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 1em;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+}
+.temperature-icon {
+  color: #d5a61bef;
+  font-size: 18px;
+}
+
+.open-meteo-link-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 1em;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar-temperature {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  padding-right: 1em;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.drop-icon {
+  color: #1e90ff;
+  font-size: 18px;
+}
+
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: #ffffff;
+    border: 1px solid #ededed;
+  }
+  .navbar a {
+    color: rgb(0, 0, 0);
+  }
+  .navbar a:hover {
+    color: #ffffff;
+  }
+  .navbar a:hover {
+    background-color: #667085;
+  }
+  .navbar-temperature {
+    color: rgb(0, 0, 0);
+  }
+
+}

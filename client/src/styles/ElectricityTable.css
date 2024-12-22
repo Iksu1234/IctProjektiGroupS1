@@ -1,0 +1,43 @@
+/*Electrisitypage.jsx tyylit*/
+
+.pricesChart
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tables-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows tables to wrap if necessary */
+  gap: 20px; /* Space between the tables */
+  justify-content: space-between; /* Aligns tables with space in between */
+  padding: 20px 0;
+  width: 70%; /* Ensures container takes full width */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.price-table {
+  flex: 1 1 calc(50% - 10px); /* Each table takes up 50% of the container minus gap */
+  min-width: 300px;
+  max-width: calc(50% - 10px);
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+  background-color: white; /* Optional: Ensures consistent styling */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.price-table th {
+  background-color: #bebebe;
+}
